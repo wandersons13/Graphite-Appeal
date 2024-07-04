@@ -1,0 +1,190 @@
+#context-savepage,
+#context-pocket,
+#context-selectall,
+#context-take-screenshot,
+#context-inspect-a11y,
+#context-inspect,
+#context-viewsource,
+#context-bookmarkpage,
+#context-reload,
+#context-forward,
+#context-back,
+#context-stop,
+#context-sendimage,
+#context-setDesktopBackground,
+#context-print-selection,
+#context-bookmarklink,
+#context-savelink,
+#context-savelinktopocket,
+#context-copylink,
+#context-stripOnShareLink,
+#context-sendvideo,
+#context-copyvideourl,
+#context-video-saveimage,
+#context-media-showcontrols,
+#context-video-fullscreen,
+#context-media-loop,
+#context-media-playbackrate,
+#context-media-unmute,
+#context-media-play,
+#context-media-pause,
+#context-keywordfield,
+#spell-check-enabled,
+#context-undo,
+#context-redo,
+#context-delete,
+#context-sendlinktodevice,
+#context-openlinkprivate,
+#context-sep-navigation,
+#context-sep-redo,
+#context-sep-selectall,
+#frame-sep,
+#context-sep-setbackground,
+#context-sep-screenshots,
+#context-sep-bidi,
+#context-media-sep-video-commands,
+#context-media-sep-commands,
+#context-sep-open,
+#context-sep-sharing,
+#context-viewpartialsource-selection,
+.openintabs-menuitem,
+#context-openlinkinusercontext-menu,
+.bookmarks-actions-menuseparator {
+    display: none !important;
+}
+
+#unified-extensions-view {
+    --uei-icon-size: 15px !important;
+    width: 280px !important;
+}
+
+.panel-subview-footer-button {
+    text-align-last: center !important;
+}
+
+#unified-extensions-view > toolbarseparator {
+    display: none !important;
+}
+
+#alltabs-button {
+    opacity: 0 !important;
+    pointer-events: none;
+}
+
+#firefox-view-button {
+    position: absolute;
+    margin-left: auto !important;
+    right: 140px;
+    top: 4px;
+}
+
+#titlebar-buttonbox {
+    display: flex;
+    justify-content: flex-end;
+}
+
+#tabbrowser-tabs {
+    border-inline-start: 0 !important;
+    padding-inline-start: var(--tab-overflow-pinned-tabs-width) !important;
+    margin-inline-start: 2px !important;
+}
+
+hbox.titlebar-spacer {
+    display: none !important;
+}
+
+menupopup {
+    --panel-background: #2b2b2b !important;
+    --panel-border-color: #2b2b2b !important;
+    --panel-color: #f0f0f0 !important;
+}
+
+menu, menuitem {
+    background-color: #2b2b2b !important;
+    border-color: #2b2b2b !important;
+    color: #f0f0f0 !important;
+}
+
+menu:hover, menuitem:hover {
+    background-color: #4b4b4b !important;
+}
+
+#commonDialogWindow {
+    --in-content-page-background: #2b2b2b !important;
+}
+
+#urlbar {
+    z-index: 1 !important;
+    margin: 0 !important;
+    text-align: center !important;
+    transition: margin 0.01s ease;
+}
+
+#identity-icon-box {
+    display: none !important;
+}
+
+.panel-header,
+.unified-extensions-item-message-deck,
+.unified-extensions-item-menu-button.subviewbutton {
+    display: none !important;
+}
+
+input, textarea, select {
+    background-color: #2b2b2b !important;
+    color: #f0f0f0 !important;
+}
+
+input:focus, textarea:focus, select:focus {
+    border-color: #4b4b4b !important;
+}
+
+#navigator-toolbox,
+#TabsToolbar,
+.tabbrowser-tab,
+.tab-background,
+.tab-line,
+#unified-extensions-area,
+#mainPopupSet,
+#notification-popup-box {
+    background-color: #2b2b2b !important;
+    color: #f0f0f0 !important;
+}
+
+.tabbrowser-tab[selected=true] .tab-background {
+    background-color: #4b4b4b !important;
+}
+
+.tabbrowser-tab[selected=true] .tab-line {
+    background-color: #f0f0f0 !important;
+}
+
+#appcontent:-moz-full-screen > #tabbrowser-tabbox > #tabbrowser-tabpanels,
+#appcontent:-moz-full-screen > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer,
+#appcontent:-moz-full-screen > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer > .browserStack,
+#appcontent:-moz-full-screen > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer > .browserStack > browser {
+    border-radius: 0 !important;
+    margin-left: 0 !important;
+}
+
+#main-window:-moz-full-screen {
+    margin-left: calc((100vw - 100%) / 2) !important;
+}
+
+.tabbrowser-tab {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+.tabbrowser-tab[selected=true] {
+    border-top-left-radius: 15px !important;
+    border-top-right-radius: 15px !important;
+}
+
+#appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer > .browserStack > browser {
+    background-color: #0e0e0e !important;
+    border: none !important;
+    border-radius: 15px !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+}
