@@ -49,7 +49,12 @@
 #context-viewpartialsource-selection,
 .openintabs-menuitem,
 #context-openlinkinusercontext-menu,
-.bookmarks-actions-menuseparator {
+.bookmarks-actions-menuseparator,
+#PanelUI-helpView > toolbarseparator:nth-child(2),
+#PanelUI-fxa > toolbarseparator:nth-child(2),
+#PanelUI-bookmarks > toolbarseparator:nth-child(2),
+#PanelUI-history > toolbarseparator:nth-child(2),
+#appmenu-moreTools > toolbarseparator:nth-child(2) {
     display: none !important;
 }
 
@@ -146,7 +151,9 @@ input:focus, textarea:focus, select:focus {
 .tab-line,
 #unified-extensions-area,
 #mainPopupSet,
-#notification-popup-box {
+#notification-popup-box,
+#bookmarkpropertiesdialog,
+#print,.header-container {
     background-color: #2b2b2b !important;
     color: #f0f0f0 !important;
 }
