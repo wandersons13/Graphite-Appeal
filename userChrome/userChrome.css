@@ -3,7 +3,7 @@
     --color-bg-darker: #0e0e0e;
     --color-text-light: #f0f0f0;
     --color-hover: #4b4b4b;
-    --border-radius-tab: 15px;
+    --border-radius: 15px;
 }
 
 #context-savepage,
@@ -191,14 +191,14 @@ input:focus, textarea:focus, select:focus {
 
 .tabbrowser-tab,
 .tabbrowser-tab[selected=true] {
-    border-top-left-radius: var(--border-radius-tab) !important;
-    border-top-right-radius: var(--border-radius-tab) !important;
+    border-top-left-radius: var(--border-radius) !important;
+    border-top-right-radius: var(--border-radius) !important;
 }
 
 #appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer > .browserStack > browser {
     background-color: var(--color-bg-darker) !important;
     border: none !important;
-    border-radius: var(--border-radius-tab) !important;
+    border-radius: var(--border-radius) !important;
     padding: 0 !important;
     overflow: hidden !important;
     box-shadow: none !important;
@@ -231,6 +231,10 @@ input:focus, textarea:focus, select:focus {
 #panelMenuBookmarkThisPage,
 #panelMenu_searchBookmarks,
 #panelMenu_viewBookmarksToolbar,
+#toggle_PersonalToolbar,
+#placesContext_showAllBookmarks,
+#placesContext_newSeparator,
+#customizationMenuSeparator,
 #PanelUI-bookmarks > vbox:nth-child(3) > toolbarseparator:nth-child(4),
 .share-tab-url-item {
     display: none !important;
@@ -284,7 +288,6 @@ label.editBMPanel_tagsRow {
     position: relative !important;
     border: 2px solid var(--color-bg-dark) !important;
     box-sizing: border-box !important;
-    z-index: 10000 !important;
     overflow: hidden !important;
 }
 
@@ -293,9 +296,9 @@ label.editBMPanel_tagsRow {
     position: absolute;
     top: 0; left: 0; right: 0; bottom: 0;
     margin: 2px;
-    border-radius: 20px;
+    border-radius: var(--border-radius) !important;
     pointer-events: none;
     background: transparent;
     box-shadow: 0 0 0 1000px var(--color-bg-dark);
-    z-index: 10001;
+    z-index: 3;
 }
