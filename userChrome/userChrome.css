@@ -1,3 +1,11 @@
+:root {
+    --color-bg-dark: #2b2b2b;
+    --color-bg-darker: #0e0e0e;
+    --color-text-light: #f0f0f0;
+    --color-hover: #4b4b4b;
+    --border-radius-tab: 15px;
+}
+
 #context-savepage,
 #context-pocket,
 #context-selectall,
@@ -99,23 +107,24 @@ hbox.titlebar-spacer {
 }
 
 menupopup {
-    --panel-background: #2b2b2b !important;
-    --panel-border-color: #2b2b2b !important;
-    --panel-color: #f0f0f0 !important;
+    --panel-background: var(--color-bg-dark) !important;
+    --panel-border-color: var(--color-bg-dark) !important;
+    --panel-color: var(--color-text-light) !important;
 }
 
 menu, menuitem {
-    background-color: #2b2b2b !important;
-    border-color: #2b2b2b !important;
-    color: #f0f0f0 !important;
+    background-color: var(--color-bg-dark) !important;
+    border-color: var(--color-bg-dark) !important;
+    color: var(--color-text-light) !important;
+    transition: background-color 0.3s ease;
 }
 
 menu:hover, menuitem:hover {
-    background-color: #4b4b4b !important;
+    background-color: var(--color-hover) !important;
 }
 
 #commonDialogWindow {
-    --in-content-page-background: #2b2b2b !important;
+    --in-content-page-background: var(--color-bg-dark) !important;
 }
 
 #urlbar {
@@ -136,12 +145,13 @@ menu:hover, menuitem:hover {
 }
 
 input, textarea, select {
-    background-color: #2b2b2b !important;
-    color: #f0f0f0 !important;
+    background-color: var(--color-bg-dark) !important;
+    color: var(--color-text-light) !important;
 }
 
 input:focus, textarea:focus, select:focus {
-    border-color: #4b4b4b !important;
+    border-color: var(--color-hover) !important;
+    transition: border-color 0.3s ease;
 }
 
 #navigator-toolbox,
@@ -153,17 +163,18 @@ input:focus, textarea:focus, select:focus {
 #mainPopupSet,
 #notification-popup-box,
 #bookmarkpropertiesdialog,
-#print,.header-container {
-    background-color: #2b2b2b !important;
-    color: #f0f0f0 !important;
+#print,
+.header-container {
+    background-color: var(--color-bg-dark) !important;
+    color: var(--color-text-light) !important;
 }
 
 .tabbrowser-tab[selected=true] .tab-background {
-    background-color: #4b4b4b !important;
+    background-color: var(--color-hover) !important;
 }
 
 .tabbrowser-tab[selected=true] .tab-line {
-    background-color: #f0f0f0 !important;
+    background-color: var(--color-text-light) !important;
 }
 
 #appcontent:-moz-full-screen > #tabbrowser-tabbox > #tabbrowser-tabpanels,
@@ -178,20 +189,113 @@ input:focus, textarea:focus, select:focus {
     margin-left: calc((100vw - 100%) / 2) !important;
 }
 
-.tabbrowser-tab {
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
-}
-
+.tabbrowser-tab,
 .tabbrowser-tab[selected=true] {
-    border-top-left-radius: 15px !important;
-    border-top-right-radius: 15px !important;
+    border-top-left-radius: var(--border-radius-tab) !important;
+    border-top-right-radius: var(--border-radius-tab) !important;
 }
 
 #appcontent > #tabbrowser-tabbox > #tabbrowser-tabpanels > .deck-selected > .browserContainer > .browserStack > browser {
-    background-color: #0e0e0e !important;
+    background-color: var(--color-bg-darker) !important;
     border: none !important;
-    border-radius: 15px !important;
+    border-radius: var(--border-radius-tab) !important;
     padding: 0 !important;
     overflow: hidden !important;
+    box-shadow: none !important;
+}
+
+@-moz-document url-prefix(http) {
+    body {
+        background-color: var(--color-bg-darker) !important;
+    }
+}
+
+#context_openANewTab,
+#context_moveTabToNewGroup,
+#tabContextMenu > menuseparator:nth-child(5),
+#context_reloadTab,
+#context_toggleMuteTab,
+#context_duplicateTab,
+#context_bookmarkTab,
+#context_moveTabOptions,
+#context_selectAllTabs,
+#tabContextMenu > menuseparator:nth-child(19),
+#context_closeDuplicateTabs {
+    display: none !important;
+}
+
+#placesContext_new\:bookmark,
+#appMenu-print-button2,
+#appMenu-save-file-button2,
+#appMenu-find-button2,
+#panelMenuBookmarkThisPage,
+#panelMenu_searchBookmarks,
+#panelMenu_viewBookmarksToolbar,
+#PanelUI-bookmarks > vbox:nth-child(3) > toolbarseparator:nth-child(4),
+.share-tab-url-item {
+    display: none !important;
+}
+
+#toolbar-context-reloadSelectedTab {
+    display: none !important;
+}
+
+#keyword-field-info {
+    display: none !important;
+}
+
+#editBMPanel_keywordField {
+    display: none !important;
+}
+
+label.editBMPanel_keywordRow {
+    display: none !important;
+}
+
+#tags-field-info {
+    display: none !important;
+}
+
+hbox.editBMPanel_tagsRow {
+    display: none !important;
+}
+
+label.editBMPanel_tagsRow {
+    display: none !important;
+}
+
+#toolbar-context-selectAllTabs {
+    display: none !important;
+}
+
+#toolbar-context-toggle-vertical-tabs {
+    display: none !important;
+}
+
+#tabbarItemsMenuSeparator {
+    display: none !important;
+}
+
+#toolbar-context-bookmarkSelectedTab {
+    display: none !important;
+}
+
+#browser {
+    position: relative !important;
+    border: 2px solid var(--color-bg-dark) !important;
+    box-sizing: border-box !important;
+    z-index: 10000 !important;
+    overflow: hidden !important;
+}
+
+#browser::before {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    margin: 2px;
+    border-radius: 20px;
+    pointer-events: none;
+    background: transparent;
+    box-shadow: 0 0 0 1000px var(--color-bg-dark);
+    z-index: 10001;
 }
