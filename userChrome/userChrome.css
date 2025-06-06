@@ -214,7 +214,6 @@ input:focus, textarea:focus, select:focus {
 #context_moveTabToNewGroup,
 #tabContextMenu > menuseparator:nth-child(5),
 #context_reloadTab,
-#context_toggleMuteTab,
 #context_duplicateTab,
 #context_bookmarkTab,
 #context_moveTabOptions,
@@ -231,7 +230,6 @@ input:focus, textarea:focus, select:focus {
 #panelMenuBookmarkThisPage,
 #panelMenu_searchBookmarks,
 #panelMenu_viewBookmarksToolbar,
-#toggle_PersonalToolbar,
 #placesContext_showAllBookmarks,
 #placesContext_newSeparator,
 #customizationMenuSeparator,
@@ -284,6 +282,14 @@ label.editBMPanel_tagsRow {
     display: none !important;
 }
 
+#customizableui-special-spring1 {
+    display: none !important;
+}
+
+#customizableui-special-spring2 {
+    display: none !important;
+}
+
 #browser {
     position: relative !important;
     border: 2px solid var(--color-bg-dark) !important;
@@ -300,5 +306,5 @@ label.editBMPanel_tagsRow {
     pointer-events: none;
     background: transparent;
     box-shadow: 0 0 0 1000px var(--color-bg-dark);
-    z-index: 3;
+    z-index: 5;
 }
