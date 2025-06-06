@@ -1,4 +1,4 @@
-![Graphite Appeal](https://i.imgur.com/7sJW60F.png)
+![Graphite Appeal](https://i.imgur.com/UMpsDG6.png)
 
 # Graphite Appeal - Firefox Theme
 
@@ -10,7 +10,7 @@
 
 The **Graphite Appeal** theme is only complete with its 'userChrome.css', see below how to add it to your Firefox.
 
-You can download the 'userChrome.css' [here](https://github.com/wandersons13/Graphite-Appeal/releases).
+You can copy the 'userChrome.css' [here](https://github.com/wandersons13/Graphite-Appeal/blob/main/userChrome/userChrome.css).
 
 ### How to install the userChrome.css?
 
