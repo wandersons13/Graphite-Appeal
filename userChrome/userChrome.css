@@ -68,7 +68,7 @@
 #context-copyimage,
 #placesContext_open\:newprivatewindow,
 .tab-group-editor-panel > toolbarseparator:nth-child(3),
-#taskbar-tabs-button {
+#taskbar-tabs-button, #context-sep-copylink, #context-copy-clean-link-to-highlight, #strip-on-share {
     display: none !important;
 }
 
